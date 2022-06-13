@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="@drawable/bg_dialog_blue_green"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/btn_cancel_dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/icon_cancel_40"
+        android:scaleType="center"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Music:"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="@color/orange_2"
+                android:textSize="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/btn_music"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/radio_on"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sound:"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="@color/orange_2"
+                android:textSize="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/btn_sound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/radio_on"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

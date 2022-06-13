@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_choose_level" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_3x3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="3x3"
+        android:layout_marginTop="340dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:background="@drawable/custom_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_6x6"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="6x6"
+        android:layout_marginTop="420dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:background="@drawable/custom_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_8x8"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="8x8"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:background="@drawable/custom_button"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Choose Level"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_back_btn"
+        android:src="@drawable/ic_back_24"/>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Game Caro</string>
+    <string name="register"><u>Register</u></string>
+    <string name="login"><u>Login</u></string>
+</resources>

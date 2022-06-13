@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:background="@drawable/bg_dialog_blue_green"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_loser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X losing!"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_user_bg"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_play_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play again"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_back_btn"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

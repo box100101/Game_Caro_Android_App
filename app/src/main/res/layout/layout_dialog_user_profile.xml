@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:background="@drawable/bg_dialog_green1_green2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/btn_cancel_dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/icon_cancel_40"
+        android:scaleType="center"
+        android:layout_gravity="top|end"
+        android:layout_marginBottom="40dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Name:"
+                android:layout_weight="2.6"
+                android:textSize="17dp"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"/>
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Password:"
+                android:layout_weight="2.6"
+                android:textSize="17dp"
+                android:textColor="@color/pink"
+                android:textStyle="bold|italic"/>
+
+            <EditText
+                android:id="@+id/edt_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1.5"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Win:  "
+                android:textSize="16dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_quantity_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lose:  "
+                android:textSize="16dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_quantity_lose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%Win:  "
+                android:textSize="16dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_percent_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30%"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_back_btn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
